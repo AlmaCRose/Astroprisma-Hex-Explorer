@@ -1,0 +1,609 @@
+{
+ "factions": [
+  "Corsair Syndicate",
+  "W.A.R.G.",
+  "Medusa Sector",
+  "I.S.F.",
+  "Synth Arch"
+ ],
+ "settlement_control": [
+  {
+   "range": "1-2",
+   "faction": "Corsair Syndicate"
+  },
+  {
+   "range": "3-4",
+   "faction": "W.A.R.G."
+  },
+  {
+   "range": "5-6",
+   "faction": "Medusa Sector"
+  },
+  {
+   "range": "7-8",
+   "faction": "I.S.F."
+  },
+  {
+   "range": "9-10",
+   "faction": "Synth Arch"
+  }
+ ],
+ "faction_encounter_table": [
+  {
+   "range": "1-2",
+   "faction": "Corsair Syndicate"
+  },
+  {
+   "range": "3-4",
+   "faction": "W.A.R.G."
+  },
+  {
+   "range": "5-6",
+   "faction": "Medusa Sector"
+  },
+  {
+   "range": "7-8",
+   "faction": "I.S.F."
+  },
+  {
+   "range": "9-10",
+   "faction": "Synth Arch"
+  }
+ ],
+ "rings": {
+  "Outer Ring": {
+   "color": "#FF4FA3",
+   "blurb": "The largest and most hostile ring. Asteroid fields make travel difficult, and remote formations hide space pirates and outlaws.",
+   "encounter": [
+    "Settlement",
+    "Outer Ring Event",
+    "Hostile Encounter",
+    "Neutral Encounter",
+    "Planet",
+    "Faction Encounter"
+   ],
+   "planet_shape": [
+    {
+     "name": "Two Moons",
+     "satellites": 2,
+     "desc": "Medium-sized planet with two satellites orbiting around its gravitational core."
+    },
+    {
+     "name": "Two Moons",
+     "satellites": 2,
+     "desc": "Medium-sized planet with two satellites orbiting around its gravitational core."
+    },
+    {
+     "name": "Ringed Planet",
+     "satellites": 0,
+     "desc": "Large planet that features a series of asteroid or ice rings orbiting around it."
+    },
+    {
+     "name": "Ringed Planet",
+     "satellites": 0,
+     "desc": "Large planet that features a series of asteroid or ice rings orbiting around it."
+    },
+    {
+     "name": "Giant Planet",
+     "satellites": 0,
+     "desc": "These planets are of unusually large size and mass, and lack satellites of any kind."
+    },
+    {
+     "name": "Giant Planet",
+     "satellites": 0,
+     "desc": "These planets are of unusually large size and mass, and lack satellites of any kind."
+    }
+   ],
+   "ring_event": {
+    "odd_theme": "Pirate Hideout",
+    "even_theme": "Asteroid Sea",
+    "odd": [
+     "As you enter the area of a space pirate base, your ship starts getting followed by an Epsilon Interceptor. Slowly, the pirate ship closes in on your starship until it finally stops you. ‘Surrender your cargo or be annihilated’— the pilot shouts through comms. Surrender ▶ Give them 3 items from your inventory or 100 Serum. Attack the Space Pirate ▶ Gain 2 Contraband Packages from the remains of the ship.",
+     "Your ship is stopped by a pirate Starpredator. They ask you to identify yourself. Buy your freedom ▶ They will let you walk away for 120 Serum. Confront the Space Pirate ▶ Attack the Starpredator. Gain 3 Contraband Packages if you win. +2 ▶ They hand you 1 Contraband Package and task you with delivering it to another Pirate Hideout. If you do, gain +1 Favor and a random melee weapon mod.",
+     "Your radar catches the signal of a small spaceship in the distance. You fly toward its position. The ship is a Smuggler Speeder, making its way back to a Pirate Hideout after looting and pillaging several traders and cargo ships. Attack the ship ▶ Take their stolen cargo: 40 Scraps, a random ranged weapon, and a Contraband Package. You can take the items back to an ISF Settlement for +1 Favor.",
+     "A laser shot narrowly misses your ship while you fly through the dangerous sectors of the Outer Ring. You switch your ship’s controls to manual mode and turn around. A pirate crew, aboard a Snowstorm Delta spaceship, has detected your presence and is attacking you from afar. Confront the ship ▶ You find 50 Scraps inside the destroyed enemy starship. Flee the encounter ▶ Move your ship to an adjacent Middle Ring hex and escape. Lose 3 Fuel.",
+     "A group of rookie pirate recruits perform piloting exercises in the vicinity of a Pirate Hideout located on a large asteroid. When they see your ship pop up on their radar, one of the veteran pilots boards her Vector-7 Mantis and flies toward your position. Escape through an asteroid field ▶ You avoid confronting the pirate ship, but lose 3 Fuel. Fight the ship ▶ Gain 2 Frag Grenades from the destroyed enemy ship.",
+     "An Old World pirate military base orbits the Outer Ring. You can see several starships parked in its hangar. Most of them are damaged, with laser burns or bullet holes in their hull. As you are about to leave, you find one last ship: a first-gen A-1 Voyager in perfect condition. ▷ You can either replace your current ship with the A-1 Voyager, or take any of its modules and add them to your spaceship."
+    ],
+    "even": [
+     "A sudden change in the gravitational field has caused a group of asteroids to orbit the system’s star at an ever-increasing speed. The asteroids, made up of sharp ice and rocks, are quickly approaching your spaceship. Mere seconds away from a direct collision with one of the asteroids, you try to maneuver your way out of the incoming threat. ROLL GRACE Success ▶ You dodge all of the asteroids. [+1⚛] Failure ▶ Lose 5 Hull.",
+     "Your radar detects an incoming asteroid field, but as the dense cluster comes closer toward your position, you realize it’s not made up of rocks or ice formations; but of human-made debris. The destruction of a large space station has created tonnes of cosmic waste, composed of sharp metal panels, heavy steel beams, and other dangerous materials. ▷ Among the waste, you scavenge some valuables: 60 Scraps, an EMP Grenade, and a Taser Shell.",
+     "You find a WARG cell, hiding in a secret base in the asteroid field. A rebel Duskwing ship confronts you. They can’t let you walk away after finding their location. Fight the rebel ship ▶ You find a random ranged weapon mod among their remains. +1 ▶ Explain that you are an ally. They let you go and reveal the location of a WARG Settlement, 2 tiles southeast.",
+     "You come across a group of Corsair Syndicate outlaws racing their ships through an asteroid circuit. ▷ You may buy Zero-G Liquor and Stardust™ Soda at the bar. Starship Race ▶ Roll your Action Dice (you may use any Engines abilities) and add the results. Compare the total to the leaderboard scores. If you beat any, you get the indicated reward. ❶ 15 points [random MASTER HACK] ❷ 12 points [random weapon mod] ❸ 9 points [random narcobiotic]",
+     "You enter a dense asteroid belt. The large amount of asteroids saturates your radar, clouding your vision. You manage to surpass the asteroid formation and reach a Synth Arch space station at its center. You discover that the asteroid field is artificial, created by a powerful hologram generator, operated by a crew of 3 Android Synths. +3 ▶They task you with taking a Tesseract to a Synth Arch Settlement, 3 tiles northwest.",
+     "A series of interconnected asteroid fields form a massive asteroid ocean. The high number of small and medium-sized rocks makes visibility difficult and renders radar systems completely useless. As a result, many outlaws and smugglers hide their ill-gotten goods in this quadrant. ▷ After hours of travel, you find a hidden stash with drugs. A small cache containing narcobiotics: 3 Testogre Hormones and 2 Tricillin Tablets."
+    ]
+   }
+  },
+  "Middle Ring": {
+   "color": "#F4C53B",
+   "blurb": "Located between the other two rings. Abundant life and water; in the Old World, human settlements and exocolonies were established here. Abandoned star cruisers and research outposts are common.",
+   "encounter": [
+    "Settlement",
+    "Middle Ring Event",
+    "Hostile Encounter",
+    "Neutral Encounter",
+    "Planet",
+    "Faction Encounter"
+   ],
+   "planet_shape": [
+    {
+     "name": "One Moon",
+     "satellites": 1,
+     "desc": "Medium-sized planet that has a single observable satellite in orbit."
+    },
+    {
+     "name": "One Moon",
+     "satellites": 1,
+     "desc": "Medium-sized planet that has a single observable satellite in orbit."
+    },
+    {
+     "name": "Two Moons",
+     "satellites": 2,
+     "desc": "Small-sized planet with two satellites orbiting around its gravitational core."
+    },
+    {
+     "name": "Two Moons",
+     "satellites": 2,
+     "desc": "Small-sized planet with two satellites orbiting around its gravitational core."
+    },
+    {
+     "name": "Medium Planet",
+     "satellites": 0,
+     "desc": "Medium planet with no satellites, commonly found in the Circumstellar Habitable Zone."
+    },
+    {
+     "name": "Medium Planet",
+     "satellites": 0,
+     "desc": "Medium planet with no satellites, commonly found in the Circumstellar Habitable Zone."
+    }
+   ],
+   "ring_event": {
+    "odd_theme": "Star Cruiser",
+    "even_theme": "Research Outpost",
+    "odd": [
+     "A colossal weeping willow grows in the greenhouse sector of an ISF terraformer starship. You find a box of gene-altered Terraforming Seeds in the room. A computer terminal reveals that they were supposed to be replanted on a nearby Gaian planet to restore its natural life. The planet is located 1 tile south, according to your ship’s navigation map. Finish the mission ▷ Go to the desert planet and plant the Terraforming Seeds. [+1 Favor]",
+     "The chassis of a Shell-4 Transporter has been converted into a luxury staryacht. The crew of the opulent ship contacts you over comms: ‘There’s been an accident with our firework system during a recent concert and now the roof of our event hall is on fire. We are in dire need of BurnPatches. We will pay handsomely for any you are willing to give us.’ ▷ You can help by providing up to 5 BurnPatches. They will pay 50 for each of them.",
+     "You enter a rotating colony ship. About 80 people are kept in a state of endless sleep within the advanced cryo-pods. The ship’s power converter has stopped working, with only enough energy and fuel remaining to keep the cryo-pods functional for 7 more months. Wake them up ▶ Warn them of the situation, so they can change course before fuel runs out. Leave them be ▶ So they can complete their course. Lose 7 Fuel refilling their deposits.[+2⚛]",
+     "You dock your starship on an abandoned cyber-laboratory ship. Suddenly, you are surprised by the sound of a human voice while you move through the darkness. You point your flashlight toward the voice and discover a single survivor. She explains that the ship was targeted by a pirate ambush. She managed to survive the raid by hiding inside a locked container. ▷ She asks you to take her to a Settlement. If you do, she gives you a random HACK. [+1 Favor]",
+     "Your radar system picks up a high-mass signal:a Tarrasque Titan starship completely silent, with all its systems turned off, yet moving slowly through space — a ghost ship. Upon entering the vessel,2 Looters emerge from the control room:‘Drop your weapon!’ Bargain with the outlaws ▶ They will let you walk away for 100 Serum. Fight the enemies ▶ After defeating them, you find 1 Contraband Package inside the ship.",
+     "An Edgecharger W ship approaches your position. They offer you to dock and trade with them. Once inside, you are surprised by its pristine condition. You are greeted by the ship’s overseer, who explains that they are a generation ship that started its journey over 125 years ago. They have been following a strict set of rules that has allowed them to outlast the fall of civilization. ▷ You may buy any items or Armor Sets from them."
+    ],
+    "even": [
+     "As your starship advances through a small set of asteroids, you perceive an unusual radar signal. A stationary Beluga Transporter has become an improvised military outpost for a WARG cell, who uses the ship to fabricate high-grade explosives. Provide support ▶ Aid them in their efforts. They reward you with a Pulse Rifle. [+1 Favor] Infiltrate the ship ▶ Sabotage the explosive reserves. Gain 5 Frag grenades. [-2 Favor]",
+     "Your starship is stopped by an Edgecharger W:‘This is an ISF checkpoint. Open your ship’s hatch for a security inspection.’Two ISF Soldiers enter your ship and start scanning. Everything is in order ▶ If you are not in possession of illegal cargo, you may continue. Reveal the cargo ▶ All Contraband Packages and narcobiotics are taken from you. [-1 Favor] Bribe the soldiers ▶ With 100 Serum. ━ Defeat the soldiers ▶ And escape the control. [-2 ]",
+     "Three research stations orbit a terraformed dwarf planet. Only one Scientist remains from the original research group, tasked with observing the mutation of alien life on the surface. Stressed and anxious, he asks for your help. One of the alien specimens has broken out of its containment unit within the third station. Help the scientist ▷ Fight the Deepworm. The scientist gives you a random HACK as a reward.",
+     "Synth Arch banners hang on the walls of a small space station. Inside, you are greeted by a Synth Apostle. Half of his porcelain face is broken, exposing the circuitry below. He guides you to a medical room, where an unconscious Cyborg lies on a surgical bed.‘Not long until their body reaches perfection’— the apostle whispers.‘Do you also crave the prophet’s light?’ Yes ▶ Gain a random cybertech implant. [+1 Favor] No ▶ The synth attacks you. [-1 Favor]",
+     "A group of three NetHackers work tirelessly to crack the code of an old computer terminal located in an abandoned computational research station. The station guards the keys to NGHTMR, one of the most powerful digital viruses ever developed. Help them crack the code ▶ ROLL MIND If you succeed, gain 1 NGHTMR Key. [+1 Favor] Fight them ▶ Destroy the station. The virus threat is too great. [-1 Favor]",
+     "A fortified concrete building stands out from the side of an asteroid. You find an old dossier named ‘ATLAS PROJECT’ inside, with detailed plans for the creation of cyborg super-soldiers. You log in to a computer terminal connected to a robotic surgery unit, capable of installing cybertech on your system. You may power the unit by spending 10 Energy. If you do, choose one of the following implants to install: ▶Titanium Bones ▶Forceblast Hand ▶Trigger Fingers"
+    ]
+   }
+  },
+  "Inner Ring": {
+   "color": "#FF5230",
+   "blurb": "The zone bordering the central star. Extremely high temperatures and frequent solar flares. Ancient helios farms built to capture the star's energy are found here.",
+   "encounter": [
+    "Settlement",
+    "Inner Ring Event",
+    "Hostile Encounter",
+    "Neutral Encounter",
+    "Planet",
+    "Faction Encounter"
+   ],
+   "planet_shape": [
+    {
+     "name": "Small Planet",
+     "satellites": 0,
+     "desc": "Small-sized planet with no orbiting moons, commonly found near the system's star."
+    },
+    {
+     "name": "Small Planet",
+     "satellites": 0,
+     "desc": "Small-sized planet with no orbiting moons, commonly found near the system's star."
+    },
+    {
+     "name": "One Moon",
+     "satellites": 1,
+     "desc": "Medium-sized planet that has a single observable satellite in orbit."
+    },
+    {
+     "name": "One Moon",
+     "satellites": 1,
+     "desc": "Medium-sized planet that has a single observable satellite in orbit."
+    },
+    {
+     "name": "Void Planet",
+     "satellites": 0,
+     "desc": "Whether the result of a supernatural event or a human experiment, its surface is partly corrupted by void."
+    },
+    {
+     "name": "Void Planet",
+     "satellites": 0,
+     "desc": "Whether the result of a supernatural event or a human experiment, its surface is partly corrupted by void."
+    }
+   ],
+   "ring_event": {
+    "odd_theme": "Solar Flare",
+    "even_theme": "Helios Farm",
+    "odd": [
+     "As you approach the area, your temperature indicators start peaking. Metal panels on the exterior of your ship change color and shine with an orange and yellow tint. Your starship won’t be able to sustain this for much longer. ROLL VIGOR Success ▶ You are able to remain conscious in the extreme heat and escape.[+1⚛] Failure ▶ Your ship is heavily damaged by the solar flare. Lose 6 Hull.",
+     "Fire columns erupt from the star’s surface. The large solar flares bend and twist as they reach out into space, like possessed by a wild instinct to escape the embrace of the star. You try to react and reach the controls, as one of the columns approaches your ship. ROLL GRACE Success ▶ You perform a dangerous maneuver and evade the flame. [+1⚛] Failure ▶ You react too late and the column hits your vessel. Lose 3 Fuel and 4 Hull.",
+     "Your journey into the perimeter of the star is suddenly compromised, as one of your ship compartments catches fire. You must act quickly. To put out the fire, you must open the airlock in the affected room, so all the oxygen is sucked out and the fire is extinguished. ROLL TECH Success ▶ You lock the door and trigger the evacuation airlock.[+1⚛] Failure ▶ You can’t activate the circuit and must put off the fire yourself. Lose 6 Health.",
+     "A green light starts to flicker on your control panel.‘RADIATION LEVELS RISING’- you see the message pop up on your navigation screen. A wave of solar radiation has just hit your spaceship. You try to start the safety protocol manually using your computer terminal. ROLL MIND Success ▶ You are able to run the anti-radiation system. [+1⚛] Failure ▶ You can’t run the code fast enough to avoid damage. Lose 5 Health and 4 Hull.",
+     "An explosion on the solar surface creates a massive flare that approaches your starship at incredible speed. A gargantuan wall of fire is seconds away from making direct contact with your spaceship. With barely any time to react, you must make a difficult choice: Take the hit ▶ To save fuel, so you can travel somewhere safe to repair. Lose 8 Hull. Spend the fuel reserves ▶ Overcharge your thrusters and escape. Lose 5 Fuel.",
+     "You receive a distress signal from a nearby ship. A Twinrotor Hauler cargo ship was hit by a solar flare on their route to deliver narcobiotics to a Settlement, 3 tiles northeast. Repair their ship ▶ Using 50 Scraps. They reward you with 100 Serum. Transport the crew to the Settlement ▶ They let you take some of their cargo as compensation. Gain 2 Vesterone Stimulants and a Supranova Physic."
+    ],
+    "even": [
+     "A swarm of interconnected rhomboid solar panels form a vast star-shaped helios farm. On its edge, several starships wait in line to refill their power supply. You are approached by a Corsair Syndicate vessel, who offers smuggled Fuel for your ship now, but for a cost. Wait in line to resupply ▶ Restore your Fuel to 20, but lose 5 Energy after waiting so long. Pay for the illegal fuel ▶ Pay 4 per unit of Fuel you want to restore. .",
+     "You prepare to cross what you think is a dense asteroid sea. As you get closer to it, you realize that they are not asteroids, but hundreds of spherical energy receptors, turning solar radiation into power. Some of the spheres show signs of damage and tear, after going years without being repaired. ▷ Restore d10 Energy by connecting your system to the power output of one of the spheres.",
+     "A giant ring-shaped structure slowly orbits the star. Metal beams, wires, and aluminium panels protrude from its edges. A small control room located in its outside layer contains records of its construction:the structure was meant to be part of a Dyson sphere, built around the system’s star. Unfinished and broken, the structure now orbits aimlessly around its power source. ▷ Restore 8 Energy and 6 Fuel, taken from the facility’s power reserve.",
+     "The light of a large neon sign catches your attention-‘RED SOL STATION’.It seems to be the name of a fuel station located nearby. All sorts of spaceships are docked to the structure. Pilots drink and have fun in the bar while their ships refuel outside. Refuel your ship ▷ Pay 3 per unit of Fuel you want to restore. Enter the bar ▷ You may buy Zero-G Liquor, Stardust™ Soda, and narcobiotics from the bartender.",
+     "You cross paths with a Medusa Stingray Frontier, carrying a large supply of Fuel to a nearby Settlement,1 tile southwest. You receive a message from the ship’s pilot, saying that they are being surrounded by 3 Vector Ace Fighters that are trying to steal their cargo. Fight the rebel ambush ▶ The cargo ship refuels you back to 20 Fuel.[+1 Favor] Join the attack ▶ Fight the Medusa ship. Gain 7 Fuel and a random melee weapon.[+1 Favor]",
+     "You dock your spaceship at a crescent-shaped solar farm. After waiting for your Energy and Fuel to be replenished, you realize that there is something wrong with the farm’s system. Damage from a space pirate raid has rendered the computer terminal unusable. ROLL TECH Success ▶ You replace the fuel terminal’s motherboard. Restore 10 Fuel. ROLL MIND Success ▶ You patch its OS and re-enable the energy output. Restore 10 Energy."
+    ]
+   }
+  }
+ },
+ "hostile": {
+  "categories": [
+   {
+    "name": "Outlaws & Looters",
+    "entries": [
+     "You come across a Smuggler Speeder flying at extremely high speed, trying to evade radar detection. The ship slows down and turns toward you. They can’t let anyone who identifies their starship get out alive. Gain 1 Contraband Package after defeating them.",
+     "A Beluga Transporter moves slowly through space, carrying tonnes of cargo containers. You try to contact the ship, but their comms are off. Upon closer inspection, you realize the ship doesn’t have any identification. It’s a contraband cargo ship.",
+     "You are alerted by the loud engines of a Twinrotor Hauler. The ship seems to be carrying more cargo than its capacity allows for. Laser cuts on its hatch confirm that it’s a stolen ship, most likely taken by looters after raiding a Settlement.",
+     "A small Orion Moth starship confronts you. They activate their weapon systems while contacting you through comms. The ship’s crew seems to have mistaken you for an ISF Trade Patrol spaceship. You try to explain the situation, but it’s too late.",
+     "You unknowingly cross through a common space route for stealth cargo transports. After a few minutes, you are approached by a Shell-4 Transporter. Their pilot quickly realizes that you are not one of them and starts combat procedures against your spaceship.",
+     "A giant Edgecharger W mothership warps a few hundred kilometers from your position. The starship seems to be carrying out a secret construction operation for a new contraband trade hub. The ship’s radar systems quickly pick up your signal and the vessel attacks you."
+    ]
+   },
+   {
+    "name": "Space Pirates",
+    "entries": [
+     "The trail of a Duskwing’s rocket engines blinds you for a few seconds as the ship warps in front of you. Without any time to react, the hostile vessel starts combat maneuvers against you. Space Pirates must have caught your radio signal when you entered the quadrant.",
+     "You are attacked by a Vector-7 Mantis. The spaceship is made out of parts of different colors and shapes from various starship models, as if it had been put together from scavenged or stolen starship parts, a common practice among outlaw and pirate groups.",
+     "You are approached by what you think is a space trader. The high number of weapon modules on the enemy ship swiftly makes you rethink your first impression. The Snowstorm Delta spaceship starts shooting at your vessel once it closes in on you.",
+     "You try to get some rest while the ship flies in autopilot mode, when you are suddenly woken up by the sound of your radar detection system. A pirate Epsilon Interceptor ship is approaching your coordinates. Gain 1 Zero-G Liquor after defeating them.",
+     "You approach a cargo vessel, looking to trade with them or ask for directions. But as you get closer to the spaceship, its silhouette vanishes into thin air. The ship was a hologram projection from a hostile Starpredator pirate ship, looking to attract unsuspecting prey.",
+     "The crown jewel of this system’s largest space pirate fleet: a Tarrasque Titan mothership in pristine condition, stolen from an Old World military base. You are unlucky enough to cross its path. Your attempt to escape is futile, as the ship prepares its attack."
+    ]
+   },
+   {
+    "name": "Mercenaries",
+    "entries": [
+     "closer to its position, it begins to attack you out of nowhere.",
+     "A Snowstorm Delta starship flies beside your ship, as if the pilot is trying to get a look at your face through your cockpit. You try to communicate with them, but their radio is offline. A few seconds pass before the ship attacks you.",
+     "‘SURRENDER YOURSELF’- the words resonate in your cockpit, coming from the comms system speakers. Your ship is intercepted by a mercenary vessel, a Vector-7 Mantis. ‘Who do you work for?”- you ask the hostile ship, but their only response is a burst of bullets.",
+     "A bounty hunter piloting a rusty Orion Moth approaches your starship. Whether it’s a case of mistaken identity or your past has caught up to you, there is only one escape now: to fight for your life. Gain a Combat Exoskeleton after defeating them.",
+     "A chrome Starpredator ship with red flames painted on its exterior intercepts your vessel. ‘This is agent 203H47, on a special bounty contract from [REDACTED], I must capture the pilot of this ship dead or alive. It’s just business.’ The ship attacks right as the message ends.",
+     "A grandiose Edgecharger W starship carrier warps near your location. You take a second to contemplate the intricate design of its hull, a marvel of Old World spacecraft. But it doesn’t take long for you to realize the ship is directed toward you, ready to engage."
+    ]
+   },
+   {
+    "name": "Spacefarers",
+    "entries": [
+     "A xenobiologist flies toward a nearby Corsair Settlement in his Scarab Interceptor ship. He has escaped a research facility with a rare alien specimen and intends to sell it on the black market for a good amount of Serum.",
+     "A crew of scavengers and treasure hunters fly aboard a Twinrotor Hauler. Fearful that you might intend to steal their findings, they attack your spaceship as soon as they detect you crossing their path. Gain a Tesseract when you defeat them.",
+     "The automaton crew of a Beluga Transporter has turned hostile. After surviving several attacks from looters and pirate vessels, their damaged code has decided to attack every ship they come into contact with.",
+     "The auto-pilot system of an old A-1 Voyager has malfunctioned and taken control of the entire ship after the pilot passed away. The rogue artificial intelligence is hostile and attacks any vessel it comes across. This time it’s your ship’s turn.",
+     "A group of heretic androids, escaping from a Synth Arch base they have destroyed. They fly at high speed on an Eclipse Warden. Thinking that you may be aligned with their enemies, or give their location to them, they attack you right away.",
+     "A cyborg pilots a Stingray Frontier. His judgement and human senses severely damaged by his cybernetic implants. He plunges the entire ship toward you, relentlessly trying to crush your vessel. You have no other alternative than to fight back."
+    ]
+   },
+   {
+    "name": "Faction Battles",
+    "entries": [
+     "A WARG column is short on supplies after a failed mission. They have deployed a Vector Ace Fighter and a Vector-7 Mantis to attack and loot an ISF Shell-4 Transporter. ▶Fight the two fighter ships [+2 Favor][-1 ] ▶Destroy the transporter [+1 Favor][-1 ]",
+     "Two Corsair Syndicate Snowstorm Delta starships are attacking a Medusa Stingray Frontier, with the intention of selling the data it carries on the black market. ▶Ambush the Stingray Frontier [+1 Favor][-1 ] ▶Attack the two ships [+2 Favor][-1 ]",
+     "A WARG Starpredator launches an attack on a Synth Arch Twinrotor Hauler transporting cybertech parts for a nearby android factory. ▶Destroy the Starpredator [+1 Favor][-1 ] ▶Attack the Twinrotor Hauler [+1 Favor][-1 ]",
+     "A Medusa Sector Orion Moth fights a powerful Eclipse Warden starship controlled by the Synth Arch, carrying powerful encrypted data from before the apocalypse. ▶Fight the Eclipse Warden [+1 Favor][-1 ] ▶Attack the Orion Moth [+1 Favor][-1 ]",
+     "The ISF has sent a radio message to all ships in the quadrant asking for support for an attack mission against the Syndicate. Two A-1 Voyagers battle a The Claw mothership. ▶Attack the mothership [+1 Favor][-1 ] ▶Destroy the two ISF ships [+2 Favor][-1 ]",
+     "The expansion of ISF trade has put the Synth Arch’s transhumanist objectives in danger. Two synth pilots in Epsilon Interceptors are carrying out an attack on a Tarrasque Titan. ▶Attack the Tarrasque Titan [+1 Favor][-1 ] ▶Fight the Interceptors [+2 Favor][-1 ]"
+    ]
+   }
+  ]
+ },
+ "neutral": {
+  "categories": [
+   {
+    "name": "Derelict Ships",
+    "entries": [
+     "A pre-war starship fighter, its engine broken, struck by a ballistic missile. You enter through the emergency gate and find the pilot’s skeleton still sat on the control chair. Among the remains, you pick up an Ion Carbine and a random ranged weapon mod.",
+     "White ice covers half of a medium-sized transport ship. The data logs reveal that an explosion in the O2 tanks exposed the inside of the vessel to the cold void of space. The crew left 2 Health Packs behind before leaving in an escape pod.",
+     "An old asteroid drilling ship, its white and brown paint discolored after years of exposure to the harsh conditions of space. Inside, a complicated set of controls and an operator manual, written in a dialect you don’t understand. You find 50 inside a locker.",
+     "A vertical breach splits the hull of a large starship carrier in half. As you prepare to explore its interior, an automatic defense turret activates and points its laser at you. ROLL VIGOR Success ▶ You destroy the turret. [+1⚛] Failure ▶ Lose 2d4 Health.",
+     "Two starship interceptors drift apart slowly, their hulls crashed into each other, consequence of a bygone battle. Their interiors are almost entirely destroyed, but you are able to salvage 60 Scraps from one of their engineering rooms.",
+     "A modern contraband ship, damaged by the impact of a small asteroid. The corpses of two space pirates can be found inside, dehydrated and decomposing. Among piles of stolen goods, you find 2 random narcobiotics and a hidden stash with 100 Serum."
+    ]
+   },
+   {
+    "name": "Cargo Transport",
+    "entries": [
+     "An orange and red Beluga Transporter crosses your path, run by an old artisan gunsmith. You stare at the ornate weapon designs that decorate the walls of his workshop while he offers to trade his wares. ▷ You may buy any weapon or weapon mod from him.",
+     "You receive a distress signal from a nearby Beluga Transporter. Some of their cargo has been accidentally disconnected from the ship. They ask if you can retrieve it for them. ROLL GRACE Success ▶ They give you 30 Scraps and 70 Serum.",
+     "A wandering trader approaches your ship in a Twinrotor Hauler. The interior of his ship is dark, illuminated only by holographic candles. He offers you a strange trade: your blood for Serum. You may lose 4 Health and gain 80 Serum, you can repeat this trade up to 5 times.",
+     "A Twinrotor Hauler is stationed at a nearby checkpoint. Large metal containers are being loaded into the ship’s cargo bay. One of the crew members approaches you and offers to trade some of their stock. You may buy any item or Armor Set from them.",
+     "The navigation lights of a Shell-4 Transporter flicker uncontrollably. You board the ship, and find the crew lying dead on the floor, and the cargo bay emptied. ‘Space pirates’- you utter to yourself. You can salvage a Disruptor Beams ship module from the starship.",
+     "You dock with a Shell-4 Transporter. Its crew is entirely composed of android clones. They need energy to power their vessel, and offer you to buy one of their spare cybertech implants. You can buy any cybertech for its cost in Serum and 10 Energy, instead of the marked EXP cost."
+    ]
+   },
+   {
+    "name": "Civilian Transport",
+    "entries": [
+     "mercenaries. You may help the survivors by giving them 100 Serum. Gain +1 Favor if you do.",
+     "A command of WARG-affiliated revolutionaries fly aboard a Vector-7 Mantis in search of shelter, trying to hide from an incoming enemy operation. If you know the location of a WARG Settlement or a Pirate Hideout, you may reveal it to them. Gain +1 Favor if you do.",
+     "A Snowstorm Delta transport vessel carries a group of refugees from an abandoned colony. They are low on resources and need urgent repairs to their ship. You may aid them by providing 40 Scraps. They reveal the location of a Sylvanian planet, 2 tiles north.",
+     "You receive a distress call. The engineer of an A-1 Voyager has been killed by hostile alien creatures that have infiltrated their ship: 3 Voidcrawlers. The rest of the crew offer to reward you with 100 and 50 Scraps if you eliminate the threat.",
+     "An Orion Moth starship drifts slowly through space, its right engine only managing to turn on for a few seconds at a time. The crew contacts your ship via comms and request some fuel in exchange for their cargo. You may lose 5 Fuel and gain a DRONE_Ladybug.",
+     "White and celeste panels decorate the exterior of an Edgecharger W, an old warship now used as an ISF hospital ship. They are carrying hundreds of wounded soldiers, operating at full capacity. You may help them by donating 2 Health Packs. Gain +1 Favor if you do."
+    ]
+   },
+   {
+    "name": "Radio Signals",
+    "entries": [
+     "You receive a weak audio signal. The log data reflects that it was sent decades ago. You play the recording-a shaky voice says that a nuclear warhead is directed at their lunar colony, 1 tile southeast. Your radar shows that there’s now a Nuclear Moon located at those coordinates.",
+     "Your radar system display glitches and shows static. All radio signals disappear, replaced by a loud white noise. Your ship has entered‘The Quiet’- an area of space run by outlaws, where comms are disabled by EMP relays. Roll for a Hostile Encounter on the next unexplored hex.",
+     "A deep space resonance drowns all other radio signals. Its strength overpowers your electronics and damages your ship. You try to deactivate your antennas before it’s too late. ROLL TECH Success ▶ You save the ship’s systems. [+1⚛] Failure ▶ Lose 8 Hull.",
+     "An orange light turns on above your radio controls. It indicates that you have received an emergency signal from the interplanetary network. A Synth Settlement located 1 tile southwest has been recently attacked by WARG forces and is now under their control.",
+     "A beeping sound registers through your comms systems. You realize it’s morse code, playing a string of hexadecimal values. You try to decode what the hidden message says. ROLL MIND Success ▶ Mark the location of a Medusa Settlement, 2 tiles southeast.",
+     "Your ship’s antennas catch a strange low frequency signal. After a few seconds trying to sync it, music begins to play from the cockpit speakers. You recognize some of the melodies - it’s Old World music, played by what seems to be a pirate radio station."
+    ]
+   },
+   {
+    "name": "Supranatural Events",
+    "entries": [
+     "You come within mere miles of a comet, as it approaches the center of the star system. Its trail illuminates the horizon, and paints the dark canvas of space with an aquamarine and indigo gleam. Gain 10 EXP and restore your Health and Energy to 20.",
+     "You hear a screeching metallic sound coming from the engine room. A Voidcrawler is trying to break into your fuel deposit and drink the black liquid inside. Attack ▶ Fight the alien. Let it feed ▶ The creature teleports back to space. Lose 4 Fuel.",
+     "The ship’s navigation controls begin to vibrate and malfunction. The needle of your watch freezes in place for a whole hour, before it starts spinning backwards. Your head feels light. You set the ship to autopilot and lie in bed. You wake up exactly d6 years younger.",
+     "You cross paths with an Eclipse Warden ship. A deep computer-generated voice speaks to you through the comms system: ‘WHAT LIGHT GUIDES YOUR PATH?’ The voice waits for an answer as you sit in silence, paralyzed. It concludes: ‘MAY YOU FIND THE EMBRACE OF THE PROPHET BEFORE THE END’",
+     "A colossal pink crystal prism floats above the void, a technicolor glow emanates from within the crystalline shard. A gentle voice inside your head compels you to exit the starship in your spacesuit and touch the prism. Gain a permanent +1 to a stat of your choice.",
+     "A strange electromagnetic field is detected by your navigation systems. Your ship is already too far inside the field to be able to escape its pull. With no other option left, you go full thrust into its epicenter. Your ship is transported to any hex of your choice."
+    ]
+   }
+  ]
+ },
+ "planets": [
+  {
+   "name": "Gaian",
+   "desc": "Dry, rocky worlds dominated by sand deserts. Despite their arid nature they were heavily settled by the ancient empires for precious jewels found below the surface; many were terraformed.",
+   "landing": [
+    "A sea of dunes expands beyond the horizon in every direction. A distant rattle can be heard.",
+    "Oasis, hidden among a mesa valley. Its indigo- colored water is hallucinogenic.",
+    "A crack in the side of a cliff reveals an underground city carved into the rock.",
+    "Abandoned nomad camp, now occupied by small alien creatures seeking shelter from the heat.",
+    "Carcass of a giant, worm-like alien creature. Its shadow provides cover from the sun.",
+    "Mineral refinery and ironworks facility. Six large robotic drills remain active."
+   ],
+   "encounters": [
+    "The desert dunes expand from horizon to horizon, their curved shapes move with the wind, crashing into each other like waves in a turbulent ocean. Suddenly, you feel your feet sinking into the ground. You are trapped in quicksand, and every movement pushes you further down.\nROLL GRACE\nSuccess ▶ You jump to safety, avoiding being swallowed by the swirling sands. [+1⚛] Failure ▶ Lose 5 Health and 3 Energy.",
+    "A robed man walks slowly across the sands of the desert. He holds a long wooden pole in one hand and a small book in the other. When he turns his head toward you, you realize he is not human, but an Android Synth. His face is metallic, steel and chrome, distressed by desert dust storms. He says he is on a pilgrimage, searching for meaning. He believes there’s a spiritual answer to the limitations of his factory code.\n▷ He gives you directions for an android Settlement, controlled by the Synth Arch, 4 tiles southwest.",
+    "As you walk through the arid surface of the planet, the sun sets in the distance. The heat of the day vanishes, and the cold embrace of the night forces you to stop and seek refuge. You come across a cave and decide to set camp there.\nSomething wakes you from your sleep. A haunting, rattling sound echoes from the depths of the cave. Attracted by the light of your campfire, 2 Dust Wasps surround you and attack.\n▷ After defeating them, you venture further into the cave from where the wasps appeared. You find the half-eaten body of a dead human. At his feet a Helix Wire and 60 Serum.",
+    "You approach a drilling platform on top of a rocky sandstone plateau. As you get closer, you see a pair of figures breaking into one of the jewel extraction machines. The 2 Space Pirates notice your presence, point their weapons at you and fire.\n▷ After defeating them, you find 1 Contraband Package among their belongings. You may take it to an ISF Settlement for +1 Favor or sell it at a Corsair Settlement for 200 Serum.",
+    "After hours of endless strolling across the desert, your mind begins to hallucinate. You try to regain consciousness as visions cloud your perception of reality.\nROLL MIND\nSuccess ▶ Your mental strength perseveres. You have +2 MIN for the next three cycles.\nFailure ▶ Lose 6 Energy.",
+    "In the center of a dune valley, an enormous building of gold and sandstone towers over the desert. The temple appears to be human made, yet no other buildings can be found for kilometers.\nYou sprint toward the pyramid-shaped ziggurat. Three sets of stairs on its front lead you to the entrance of the structure. Inside, a large room decorated with ceramic tiles and mosaics, strange symbols and glyphs carved into its walls. A stone altar stands in the center of the room, with a Neon Blade atop it. The floor shakes and cracks as you grab the weapon. After a couple of seconds, it collapses, plunging into a lower floor with you alongside it.\nYou look around the chamber. Thousands of small hexagonal shapes cover its walls, some of them filled with larvae. Alien insects have turned the ziggurat into a giant hive. An eerie sound alerts you before a Glyphmoth Queen awakens from her slumber and attacks."
+   ]
+  },
+  {
+   "name": "Calorian",
+   "desc": "Rocky and barren, one of the hardest environments to survive in due to regular earthquakes, seismic activity and high temperatures. Their surface is rough, often red and maroon from iron-oxide dust.",
+   "landing": [
+    "Five concrete columns sustain an oil platform several hundred meters above the surface.",
+    "A field of hundreds of antennas, emitting an indecipherable cacophony of radio signals.",
+    "Canyon, formed by a now-extinct river, reveals layers of red, amber, and violet-colored soil.",
+    "Iron mine operated by automatons. The control room is damaged, causing them to malfunction.",
+    "The land bends, revealing a giant ravine that splits the terrain in two.",
+    "Remote-controlled rover vehicle. It is unknown who still operates it and from where."
+   ],
+   "encounters": [
+    "A crystal sphere stands out from the harsh and rocky terrain of a mountain sierra. As you get closer to it, you discover that the building is a space telescope. An old man greets you when you enter. His beard is long and white and his eyes light blue. He tells you that he is a NetHacker from the Medusa Sector, and that he has been trying to log into the observatory’s data server for months, without success.\nDECRYPT THE CODE\nPerform three MIN Challenge Rolls. You must succeed on all three to crack the code. You may spend Data Shards to succeed one of the rolls automatically.\nSucceed ▶ He reveals there’s a Medusa Sector Settlement 2 tiles south. [+1 Favor]\nFailure ▶ Lose 3 Energy.",
+    "You traverse a rocky canyon. A loud crash can be heard from the distance after two giant boulders collide. The ground begins to move violently. You try not to lose balance as you move across the terrain, but it’s too late. A rock falls from the side of the hill toward you. You attempt to push it away before it hits you.\nROLL VIGOR\nSuccess ▶ You shove the falling rock to the side. [+1⚛] Failure ▶ Lose 7 Health. Your leg is injured, you have -2 VIG and -2 GRA until you restore your Health back to 20.",
+    "Broken mechs and thousands of destroyed battle droids lie scattered across a scorched battlefield. The red soil that covers the planet’s surface has swallowed most of the remains.\n▷ You find a Gauss SMG and a Laser Accelerator mod next to the body of a human soldier.",
+    "You find a large octagonal factory complex. Its exterior is made out of black and silver metal, the name ‘EVO ROBOTICS’ painted on the walls. The interior houses a roller coaster of conveyor belts and assembly lines. Your movement triggers the motion sensors of 3 Automaton Bots. You rush to the factory control system and attempt to turn them off.\nROLL TECH\nSuccess ▶ You manage to deactivate one of the robots, and loot a Tesseract from it after defeating the other two.\nFailure ▶ Lose 2 Energy. The three automatons attack you.",
+    "Night falls on the red planet. As you walk through the barren landscape, you find a dead astronaut. His helmet is broken, fractured by a gunshot.\n▷ A Laser Blaster with a Silencer mod lies next to his left hand.",
+    "You walk through the crater of a meteor valley. When you reach the edge of the crater, you hear gunshots coming from a military outpost located nearby. A group of rebels has surrounded a fortified tower. The two remaining soldiers shoot down from the rooftop. One of the rebels points their rifle at you: ‘This outpost is under Intersolar Federation control. We won’t let them take another planet.’ A defending soldier notices you and screams: ‘Please help us, they have massacred our entire garrison. There’s only two of us left alive.’\nAid the soldiers ▶ Fight 3 Rebel Fighters. You are rewarded with 250 Serum. [+2 Favor][-1 ]\nSide with the rebels ▶ Fight 2 ISF Soldiers. Gain 2 Health Packs. [+2 Favor][-1 ]"
+   ]
+  },
+  {
+   "name": "Vaporian",
+   "desc": "Hydrogen, helium and other chemicals form a thick layer of gas making up most of their mass. Landing or exploring the surface is impossible due to colossal, never-ending storms of toxic gas and vapor.",
+   "landing": [
+    "Rotating space station, employed as a luxury holiday resort during the Old World.",
+    "Vapor refinery located in low orbit. Used to process the gases extracted from the planet.",
+    "Modified asteroid that served as a trade hub and refuelling station for starships.",
+    "Small terraformed moon used as a clandestine illegal club for hunting rare alien creatures.",
+    "Ring-shaped megastructure that encircles the planet. It used to be a space city-state.",
+    "Secret hideout of contraband cargo, hidden among the clouds in the upper layer of atmosphere."
+   ],
+   "encounters": [
+    "An air current suddenly pushes your ship into a storm. The strong winds cause turbulence in the starship and make the controls malfunction for a couple of seconds. Toxic fumes from the planet’s atmosphere begin to leak into the interior of the spaceship. You turn the ship and accelerate in an attempt to escape.\nROLL GRACE\nSuccess ▶ With a quick maneuver, you manage to escape the eye of the storm. [+1⚛] Failure ▶ Your ship loses 4 Fuel and you lose 6 Health.",
+    "You move to the upper layers of the planet’s exosphere. Your ship’s radar detects a weak signal a few hundred meters from your location. You find a spherical satellite with four large antennas sticking out of its side. After deciphering the radio signal it emits, you read the following message code: ‘Hidden capsule, 3 tiles northeast.’\n▷ Visit that tile to find a steel orb containing a DRONE_Spider and 30 Serum.",
+    "Several prism-shaped megastructures are suspended above the stratosphere. Steel pipes and tubes absorb rare gasses and chemical elements from the environment, processing them and turning them into pure liquid Serum. You land on one of the distillery rigs and find its deposits empty. Someone must have gotten to them first. Before you board your spaceship again, you see a group of ships leaving one of the other distilleries.\nConfront the looters ▶ Attack 2 Vector Ace Fighters. You loot an extra 50 from each ship you defeat.\nAvoid the encounter ▶ You activate your ship’s thrusters and escape. Lose 2 Fuel.",
+    "Your spaceship cuts through the thick layer of clouds that floats over the planet’s surface. A red light begins to flicker on the engine control panel. The gasses have caused a breakdown in the propulsion system. You must fix it before the engine failure compromises the whole starship.\nROLL TECH\nSuccess ▶ You rewire the engine’s power unit, cooling it down and fixing the issue. [+1⚛] Failure ▶ Your ship loses 5 Hull. You only have 1 Action Die during ship combat until you restore your ship’s Hull back to 20.",
+    "An unusual-looking spaceship approaches your position. The pilot of the vessel is an artisan fuel Merchant, a vapor craftsman who specializes in making handmade fuel out of rare gasses. The last of his kind. He offers you to buy some of his artisan fuel at a special price.\n▷ You can refuel your starship, paying 2 per point of Fuel.",
+    "You land on a floating carrier platform. Dozens of old cargo ships are stationed on its runway, covered in rust. Suddenly, an automatic door opens behind you. A woman runs desperately toward the edge of the platform. Behind her, an armored man tries to shoot her before she jumps. He stares at you and shouts: ‘Bring me her head and half of the bounty is yours!’\nAid the bounty hunter ▶ Fight the NetHacker. Gain 150 Serum. [+1 Favor][-1 ]\nHelp the runaway ▶ Fight the Bounty Hunter. The woman explains that she works for the Medusa Sector. She’s had a bounty on her head since she stole data from an ISF terminal. Gain a random HACK. [+1 Favor][-1 ]"
+   ]
+  },
+  {
+   "name": "Aquarian",
+   "desc": "Planets with a high amount of water in their hydrosphere. Oceans cover most of their surface; some present islands or archipelagos, others are completely covered in water.",
+   "landing": [
+    "Group of small rocky isles covered in algae, surrounding a shipwrecked vessel.",
+    "Alien marine life research outpost located the diameter of an immense oceanic trench.",
+    "Floating city connected by water canals and moving platforms. Appears to be abandoned.",
+    "Transport elevator that leads to an underwater secret facility. Water has flooded most of",
+    "Archipielago of virgin islands. Their plant life bears strange and colorful fruit.",
+    "Beautiful coral reef the size of a continent. Its jewel-like shapes shine during the night."
+   ],
+   "encounters": [
+    "You exit your starship after landing on the planet’s surface. Completely surrounded by water, you swim toward a small rock, trying to find a place to rest. Before you are able to reach it, the tide rises drastically. You fight against the current as the waves carry you away from the rocky islet.\nROLL VIGOR\nSuccess ▶ You swim against the water current before it drags you in. [+1⚛] Failure ▶ You lose 4 Health and 4 Energy.",
+    "A large, abandoned submarine drifts over the ocean waves. Its rusty exterior, populated by algae and mollusks, has several holes through which seawater leaks into the inside of the submersible. You open the hatch and make your way to the interior.\n▷ Among the wreckage, you find 2 Energy Cells and an Electroxyn Capsule.",
+    "Two cylindrical platforms connect the ocean surface to an underwater facility. A series of decompression chambers lead you to the entrance. The entire building is submerged in total darkness. All lights, comms, and electronic equipment are unusable due to a failure in the power system.\nREPAIR THE POWER GENERATOR\nPerform three TEC Challenge Rolls. You must succeed all three to restore energy to the facility.\nSuccess ▶ The building is illuminated and power is restored. You find a set of Orion II Armor and a Tricillin Tablet in a steel locker.\nFailure ▶ The machine short-circuits and electrocutes you. Lose 5 Energy. The sparks have attracted 2 Voidcrawlers to your location. The alien creatures attack you.",
+    "The carcass of a colossal alien whale lies stranded on a black sand beach. Insects and small alien creatures feed on the remains of the whale’s body. Its dark red skin has partly turned white due to the presence of fungi and bacteria. As you get closer, you see a Scientist inspecting the dead animal. She claims to be a xenobiologist, working for the ISF’s alien research unit.\n▷ She reveals that there is a Research Outpost located 1 tile northeast.",
+    "You submerge into the ocean depths. A small flashlight on your helmet cuts through the darkness of the ocean floor. You are startled by a school of fish that quickly speeds away from behind you. You turn around and see a gigantic alien Deepworm ready to attack you. Its wrinkly, creased skin is covered in hundreds of eyes and tentacles.",
+    "A long metallic structure parts the ocean in two. At its center, an elevator platform that leads to an underwater extreme security prison, 8.000 meters below sea level. ‘Identify yourself.’ Three android security robots stop you at the entrance. ‘This prison guards terrorists and dangerous criminals.’ Inside the facility, a group of inmates take advantage of the distracted guards to revolt. ‘Kill all the robots!’– screams one of the prisoners, as she smashes a crowbar against the android guard’s torso.\nAid the guards ▶ Fight a Guerrilla Commander and a Rebel Fighter who lead the revolt. Gain a random cybertech module. [+1 Favor][-1 ]\nJoin the revolt ▶ Fight 3 Android Synths. Gain 2 Testogre Hormones as a reward from the inmates. Gain an additional point of Favor with WARG and 70 if you transport the inmates to the nearest WARG Settlement. [+1 Favor][-1 ]"
+   ]
+  },
+  {
+   "name": "Sylvanian",
+   "desc": "Biodiverse worlds with humid atmospheres and rich flora and fauna. Lush rainforests, jungles, shallow inland seas and swamps. High predatory-life density leaves most still unsettled.",
+   "landing": [
+    "Grotto that serves as the lair of an alien beast. There’s no sign of the creature. For",
+    "Atop a formation of interlocking branches tree trunks, 100m above ground level.",
+    "Shrouded in mist from giant waterfalls rising over a quiet lagoon.",
+    "Among the vast fields of elephant grass of savanna, surrounded by a meandering river.",
+    "Swamplands, next to a small empty hut built inside a hollow mangrove tree.",
+    "Ancient stone temple covered in moss and vines, overlooking the tropical forest."
+   ],
+   "encounters": [
+    "A destroyed set of habitation pods form a small colony. The settlement is completely deserted. Possibly attacked by wild predators or looted by raider gangs, leaving no one behind.\n▷ You find an Electroxyn Capsule and a Data Shard among the remains.",
+    "After making your way through the tortuous terrain, you find a small clearing and decide to rest. As you drop your weapons, someone rushes toward you, hiding behind the foliage. You fall unconscious as they stab your arm with a needle and cover your eyes. You wake up in shackles, locked in a cell at a secret WARG base. A Guerrilla Commander begins to ask questions: ‘Who do you work for?’\n+1 ▶ You are an ally. They free you and restore your Health and Energy to 20. They give you the location of a nearby WARG Settlement, 2 tiles northeast.\n0 ▶ You are neutral. They set you free.\n-1 ▶ You are an enemy. Pay 150 for your freedom or fight the Commander. You can’t use weapons during the fight.",
+    "You advance through the rainforest, cutting through its thick vegetation. You stumble and fall to the ground, your feet trapped by an interconnected web of vines and tree roots. As you try to get back up, one of the vines wraps around your foot and lifts you up in the air. A three-headed carnivorous plant holds you mere centimeters from its salivating jaws.\nROLL VIGOR\nSuccess ▶ You cut the vine restraining you and run to safety before the plant can bite you. [+1⚛] Failure ▷ You lose 7 Health. You have -2 VIG and -2 GRA until you restore your Health back to 20.",
+    "Hover-motor speeders accelerate through a field of tall sequoia trees. On top of the hover bikes, 2 Rebel Fighters try to escape from 2 Mercenaries, chasing them a few meters behind.\nSide with the rebels ▶ Fight the two Corsair mercenaries. Gain a random ranged weapon mod. [+1 Favor][-1 ]\nHelp the mercenaries ▶ Fight the guerrilla soldiers. Gain a Combat Exoskeleton and 2 random grenades. [+1 Favor][-1 ]",
+    "The terrain becomes increasingly difficult to traverse, culminating on a steep cliff’s edge. Climbing on top of the trees is now the only possible way to advance through the jungle landscape.\nROLL GRACE\nSuccess ▶ You leap from the treetops with ease. Gain +1⚛ Hyperdrive charge and restore 5 Energy.\nFailure ▶ You fall to the ground as one of the branches breaks under you. Lose 6 Health and 3 Energy.",
+    "On the northern shore of a small lake, you find a hidden grotto. You venture far into the cave system, drawn by the smell of ripe fruit. A loud screech echoes through the cave, paralyzing you. The dark figure of a giant alien bat blends into the shadows of the cave, its haunting white eyes shine like gemstones as it follows your every move. You desperately try to escape, but the blind beast tracks your location with the sound of your footsteps and your accelerated breathing. Before you are able to react, a Xhiroptera Predator violently attacks you.\n▷ After defeating it, you eat the fruit and restore your Health and Energy back to 20. You find 3 random status cures in the cave."
+   ]
+  },
+  {
+   "name": "Ecumenopolis",
+   "desc": "The greatest marvels of the Old World: massive planets whose surface is entirely consumed by urban sprawl. All natural life was destroyed for the megacity; now they are deserted orbiting ghost towns.",
+   "landing": [
+    "Legislative district of the city. The senate partly destroyed and surrounded by tanks.",
+    "Legions of skyscrapers as far as the eye see, now taken over by overgrown plantlife.",
+    "A labyrinth of narrow streets, illuminated glitching holographic adverts and screens.",
+    "Landfill waste processing megacomplex, over- saturated with mountains of junk and rubble.",
+    "Polygonal-shaped tower with the phrase “Galactic Armada Sector V” painted on its walls.",
+    "Space elevator. The rust and lack of maintenance have rendered it inoperative."
+   ],
+   "encounters": [
+    "You discover a circular park on the outskirts of the city center. Its green foliage breaks the grey and maroon color palette of the planet’s surface.\n▷ You find a small supply bag next to a fallen security robot. It contains 2 Energy Cells and a Data Shard.",
+    "The light of a carrier ship blinds you as you walk through the city streets at night. 2 ISF Soldiers disembark from the transport vehicle. Their superior, an ISF Sentinel, tells you they are on patrol, assessing the planet’s situation for a possible reconstruction effort.\n▷ He provides directions for an ISF Settlement, located 2 tiles southwest.",
+    "You advance to the center of the city, through its empty streets and destroyed buildings. In the middle of a wide road, a human-like figure searches frantically through the rubble.\nShe raises her head and stares at you. Her eyes have been removed and replaced with white and red cybernetic implants. She rushes toward you at superhuman speed, running on all fours like a manic animal. You sense the loss of her humanity, erased and replaced by a combination of primal instinct and computer code. Fight the Cyborg. When she reaches 10 Health or lower, perform a TEC Challenge Roll.\nROLL TECH\nSuccess ▶ You are able to reset her systems. She regains consciousness after a few minutes. You can take her to a Synth Settlement to have her wounds treated. If you do so, gain +1 Favor.\nFailure ▶ Her system short-circuits and shuts down. She immediately stops breathing. You may extract a random cybertech implant from her body.",
+    "You walk past an abandoned shopping mall and make your way to a massive industrial complex. Most of the buildings are empty, looted by raiders and space pirates, yet you are able to find a small factory still running.\n▷ Behind a motorized arm, you find an intact model of the DRONE_ÒwÓ mech system.",
+    "Toxic fumes and grey smoke coming from the hundreds of abandoned factories in the area make it impossible to breathe. You enter the underground level, where there is still some breathable air and oxygen left. The city’s sewers have been taken over by alien life trying to find refuge from the polluted surface. As you pass the sewer gates, you hear a screech from the opposite end of the canal. One of the alien beasts has noticed your presence.\nROLL GRACE\nSuccess ▶ You are able to flee and close the sewer gates before getting caught. [+1⚛] Failure ▶ The alien beast attacks you before you can escape. Fight a Xhiroptera Predator.",
+    "A tall chrome tower rises above you. Radio and communication antennas emerge from its top floor. Inside, a young man dressed in black attempts to break into the building’s network system before a large android war robot attacks him. The machine screams in a glitchy voice: ‘NEUTRALIZE INTRUDERS // THEY WANT TO STEAL VITAL DATA // HELP SECURE FACILITY’\nAid the hacker ▶ Fight the Android Titan. The man rewards you with a random HACK. [+1 Favor][-1 ]\nSide with the android ▶ Fight the NetHacker. Gain a random EVO Robotics cybertech implant. [+1 Favor][-1 ]"
+   ]
+  }
+ ],
+ "satellites": [
+  {
+   "name": "Asteroid",
+   "desc": "Minor planets of varying sizes composed of rock, metal and even ice. Hundreds of thousands lie unexplored, making them perfect spots for illegal activity; pirate hideouts are commonly hidden in large asteroid formations.",
+   "landing": [
+    "Military laser turret hidden in a small rocky asteroid. The weapon has run out of power.",
+    "Dense ring of asteroids surrounding a planet. You land on a small group of them.",
+    "Two medium size asteroids joined together by six titanium pillars and metal cables.",
+    "Artificial asteroid with radar equipment. The radar tower has been hit by another asteroid.",
+    "Large asteroid, cracked in half, revealing tunnels dug inside by alien insects.",
+    "Ice asteroid, its surface has been completely frozen and covered with sharp icicles."
+   ],
+   "encounters": [
+    "The cockpit of an A-1 Voyager lies at the edge of a large crater. Its wings can be found just a few meters ahead. You find its engines at the center of the crater, and attached to them, a Warp Drive.\nROLL TECH\nSuccess ▶ You salvage the Drive from the shipwreck and take it to your ship.\nFailure ▶ Its circuitry breaks as you pull it out, rendering it useless. Lose 3 Energy.",
+    "The smell of alcohol and smoked spices lures you into a busy cantina. Speeder bikes rest on the outside of the bar, while the crew of a small cargo ship stacks boxes of bottles and frozen food behind the building. You enter through the main door and immerse yourself in its atmosphere. A jazz band provides the soundtrack to a night of entertainment, as outlaws and bounty hunters drink and gamble.\n▷ You may buy Stardust™ Soda or Zero-G Liquor from the cantina.\n-2 ▶ Your presence at the bar raises a few eyebrows. A Space Pirate confronts you about your bad relationship with the Syndicate.\nPlay dice ▶ Join the outcasts for a game of dice. Bet any amount of Serum you wish and roll two d10. If you get a 10, you double your money. If you get two 10s, you triple it. If you don’t get any, you lose it all.",
+    "An obsidian obelisk rises from the asteroid’s surface. Rock and stone crystals grow out of its base and into the ground, as if roots from an ancient tree. You place your palms on its rugged face. A deep vibration runs through your entire skeleton.\n▶ Your character’s life flashes before their eyes. As if immersed in a dream, they relive a memory of their past. It almost feels real. [+2⚛] ▷ What memory do they experience?",
+    "You follow a series of marks on the asteroid’s surface, belonging to a dual- tracked cargo vehicle. The trail ends at the entrance to a man-made cave, most likely from a previous mining operation. The light of your flashlight guides you through the dark cavern until you reach a rectangular-shaped facility made out of light steel panels. Inside, a number of spacecraft parts are stored in tall shelves. You conclude that the building must have been used as a hidden storage silo during war-time operations.\n▷ You find a set of Ion Engines.",
+    "The loud buzzing growl of speeder bike engines deafens you for a few seconds. When you regain your senses, you find yourself ambushed by 3 Edge-worlders riding run-down hover-bike models. Surrounded, you can’t do much while they steal from you.\n▷ You lose your first two inventory items and half of your Serum [rounding up].\nAs they speed off, your quick reaction time helps you knock one of the hostiles off their vehicle. You get on his ride and chase the other two thieves.\n▶ Fight the enemies to recover your stolen goods. You must ROLL GRACE every time you attack with a weapon or cybertech skill to determine if you manage to hit while driving the bike at the same time.",
+    "The asteroid houses a tucked away mansion, with walls of carved sandstone and quartz. The cherished home of an infamous crime boss, built with dirty money from their interstellar drug trade cartel. Now the mansion is abandoned, collecting dust and radiation from outer space. You access the local computer terminal, and discover that the owner is now locked up in an underwater prison on an Aquarian planet, 2 tiles north.\n▷ You find a hidden safe behind a cabinet, containing 100 and 2 random narcobiotics."
+   ]
+  },
+  {
+   "name": "Crater Moon",
+   "desc": "The most common type of moon. Rocky bodies with a very thin atmosphere unable to stop meteorites, so their barren surface is covered with large craters and impacts.",
+   "landing": [
+    "Giant crater, more than a hundred kilometers in diameter.",
+    "Ship docking and launch platform. The stairs that lead to it are covered in rust and debris.",
+    "Valley with a small lunar colony. A set of spherical buildings connected by tunnels.",
+    "Terrain elevation with flags planted on the top. The flags are unrecognizable to you.",
+    "A group of large geoglyphs, carved into the barren surface of the moon.",
+    "Underground entrance that leads to a big room with blocks of computer servers."
+   ],
+   "encounters": [
+    "Your spaceship is targeted by a series of anti-air missiles as you enter the lunar atmosphere. An automatic defense protocol from Old World military bases. You fly at max speed and try to perform a quick aerial maneuver to escape their tracking system.\nROLL GRACE\nSuccess ▶ You avoid the attack with a split S maneuver. [+1⚛] Failure ▶ One of the projectiles hits your right wing. Lose 6 Hull.",
+    "A glass and silver dome covers the roof of a small lunar colony station. Inside of the abandoned research facility, you find a plethora of maps and scientific equipment, including various soil samples from every known type of planet and satellite. The largest chamber at the lunar base contains a recreation of the local star system. Its clockwork mechanism makes the small planets orbit around the central star, with accurate scale and velocity. Large portions of the map are missing due to damage or lack of knowledge.\n▷ You discover the location of a new planet, select an unexplored hex on your map and roll for a random planet type. It has two orbiting satellites.",
+    "The sky turns unbearably bright for an instant. You witness a medium-sized meteor approach the lunar atmosphere at increasing speed. Suddenly, it becomes engulfed in flames and slows down, before splitting into dozens of smaller meteors. The falling celestial objects rain over the surface of the moon, painting the sky with purple and orange colors. Most of the small rocks disintegrate before reaching solid ground, but a few are able to impact, causing a series of seismic alterations.\n▷ Your character makes a wish while observing the meteors fall. [+2⚛]",
+    "Tucked away behind a mountain valley, the Medusa Sector guards a secret surveillance facility. In its control room, hundreds of screens show camera and information feeds from every planet and settlement in the system. A single hexa-core computer terminal uploads all the processed information to the Cybersphere. It safeguards the code of a powerful MASTER HACK.\n+3 ▶ You request access to the facility, displaying your faction credentials.\nFight the guards ▶ A Cyber-Terrorist protects the main entrance, along with 2 Automaton Bots under their control. [-1 Favor]\nInfiltrate ▶ ROLL GRACE against the Cyber- Terrorist. If you win, you are able to swiftly enter the building without them noticing.\n▷ Once inside the facility, you obtain a copy of the MASTER HACK and a Data Shard.",
+    "Your radar’s topographic map shows a small circular building located a few kilometers to the north. After speeding through the lunar terrain at low gravity, you find a single colony pod. Expandible and easy to transport housing and research units employed during the exploration age. Their ease of use and maintenance allowed for the settling of hundreds of planets and moons in the span of a few decades.\n▷ You find a Health Pack and 2 Terraforming Seeds inside the pod.",
+    "An old Android Synth drags their dying body through the ground. More than 50 years have passed since the date of their planned obsolescence. Fifty years evading death. But the time has finally come, their body is now damaged beyond repair.\nAid the robot ▶ Give the android 8 Energy to prolong their life for a few more days.[+1 ]\nLet them die ▶ Stand still as the light fades from their synthetic eyes. You may take 2 Energy Cells from their body."
+   ]
+  },
+  {
+   "name": "Nuclear Moon",
+   "desc": "Moons with high radiation, from failed terraforming or damage from nuclear weapons in past wars. Some have toxic, threatening ecosystems of dangerous mutated alien life.",
+   "landing": [
+    "Impact crater. An unexploded nuclear warhead lies in its center.",
+    "Green mist engulfs a swamp. Creatures climb up the trees to avoid touching the toxic water.",
+    "Dead forest next to a small lunar colony. All the plants are wilted or rotten.",
+    "Immense cavern, the walls decorated with strange mushrooms of different colors.",
+    "Destroyed nuclear plant. One of its reactors has collapsed and its core is exposed.",
+    "Lake of strange purple and green oil next to an abandoned mineral refinery."
+   ],
+   "encounters": [
+    "An ancient terraformed forest destroyed by ionizing radiation. Kilometers of flora and vegetation turned into a ginger-colored dead forest, product of chemical damage. Suddenly, you are attacked by a mutated Dust Wasp, protecting its territory.\n▷ Nuclear mutations give the insect +15 Max HP.",
+    "The needle of your Geiger counter begins to shake uncontrollably, moving quickly toward the left. Five. Twelve. Thirty-one. Fifty-two. One hundred. The radiation meter increases faster than you can count as you approach your destination: facility NR-L3-0618, a nuclear reactor. An unidentified explosion caused a massive breach on its side, collapsing half of the building and exposing the radiated core. Over a hundred years have passed since that incident. Your spacesuit is capable of protecting you from radiation, but overexposure can cause unforeseen damage.\nEnter the facility ▶ You set foot inside the power plant. You have 15 minutes to explore it and salvage anything of value before the radiation kicks in. A Deepworm attacks you inside the building. You must defeat it in 3 turns or your time will run out. If it does, roll for an Abyssal Scar.\nExplore with a drone ▶ If you have a DRONE system, you may use it to infiltrate the building remotely. Lose 5 Energy.\n▷ You find 3 Power Cells, a random HACK, and 2 Data Shards inside.",
+    "Clouds gather above you while traversing the planet’s landscape. The grey and green gloom of the sky brings with it acid rain. A few drops fall on the ground near you, harming every living being it touches.\nROLL GRACE\nSuccess ▶ You sprint across the terrain and find a refuge under an arched cliff. [+1⚛] Failure ▶ You can’t find shelter in time and get hit by the corrosive rain. Lose 6 Health.",
+    "A lunar colony settlement lies buried under a lake of sulfur. As you walk through the remains, you find several bodies, now turned into frozen skeletons after the corrosive atmosphere disintegrated their flesh.\n▷ You find a BurnPatch and a ShieldStim inside.",
+    "You find an abandoned Twinrotor Hauler at the center of a crater. The navigation controls are still operative, and its engines have power. Something must have made the crew leave the starship suddenly. Three hundred meters to the east, you find the bodies of four crewmembers, with giant claw marks and corrosive wounds.\n▷ You retrieve 2 Health Packs from them.",
+    "Protected by your spacesuit, you advance through a barren swamp. Night falls over the Nuclear Moon, plunging the surrounding environment into near total darkness. A red dot glows on the left side of your chest. Suddenly, a hooded figure emerges from behind a dead mangrove tree. The man holds a high-caliber gravity rifle, its sights firmly pointed at your heart. He stares into your eyes for a few seconds and drops his weapon. ‘You scared me. I thought you were the beast.’ He lowers his hood. His face is stern, scarred, and mature. You sense a deep melancholy buried behind his green eyes. ‘I’ve been hunting the beast for three weeks. Me and my crew landed on this moon some time ago. I was the only one left after the beast attacked. I can’t leave this hellhole without avenging them.’\nJoin the hunt ▶ Help the man search for the alien beast. After a few hours, it appears, attracted by your smell. A Mutated Chimaera comes out of the depths of the swamp.\n▷ Nuclear mutations give the beast +10 Max HP. The hunter deals d12 damage to the enemy per turn. If you don’t defeat the enemy in 5 turns, it attacks the hunter, killing him. You may loot a Gravity Rifle from his body."
+   ]
+  },
+  {
+   "name": "Frost Moon",
+   "desc": "Natural satellites composed of ice and water; the most common water-bearing bodies. Hard to traverse due to cold temperatures and geysers. Some hold a subsurface ocean of liquid water.",
+   "landing": [
+    "Peak of the tallest mountain in the valley. Northern lights can be seen in the night",
+    "Frozen skeleton of a giant alien animal. Small creatures use it as shelter for the blizzard.",
+    "Lone village in the tundra, on the shore of frozen chemically active lake.",
+    "Giant mechanical crawler vehicle, abandoned over a snowy battlefield.",
+    "Ceramic shrine carved into a mountain sierra. The stone path leading to it has frozen.",
+    "Old military base, hidden in the mountainside. Its large metal doors are stuck."
+   ],
+   "encounters": [
+    "You walk through a frozen sierra. The high- speed winds and air pressure increase the difficulty of the climb. As you take a break to rest and breathe before continuing on your path, the ground beneath you begins to vibrate. An entire layer of snow precipitates from the side of the mountain, triggering a chain of icefalls that converge into a massive avalanche.\nROLL VIGOR\nSuccess ▶ You manage to evade the center of the avalanche and grab onto a tree, avoiding the snowfall. [+1⚛] Failure ▶ You are caught by the falling snow, and crushed by its weight. Lose 7 Health.",
+    "You stumble upon the ruins of a lunar colony, covered in snow. Some of its buildings have been rebuilt, their walls patched with metal scraps and wood planks. A pillar of smoke emerges from the inside of one of the houses. Three Edge-worlders have turned this encampment into their home. They speak in a rare dialect unfamiliar to you, but you are able to communicate through your ship’s computer terminal. The men are wary of strangers, yet visibly excited to interact with another human being after so many years alone.\n▷ You may spend the night with them and restore your Health and Energy back to 20.",
+    "A Synth Apostle stands on the edge of a cliff among a snow storm. The red lights on their eyes cut through the fog like sharp daggers. They walk toward you and place their hand on your forehead. A glowing symbol on their palm illuminates your face. ‘Open your mind to the prophet’s light.’\n+3 ▶ Unlock your mental terminal and let the apostle manipulate your system’s code. Gain a random MASTER HACK. [+1 Favor]\nAccept ▶ He updates your operating system. Gain a random HACK. [+1 Favor]\nReject ▶ Fight the robot. [-1 Favor]",
+    "Intense, cold hail bombards the surface of the moon, with little regard for any living being in its path. You find shelter from the incoming blizzard in a small cave on the mountainside. As you are about to light a fire to keep you warm, a hostile Deepworm attacks you, attracted by your scent.",
+    "You finally reach the ocean side, only to discover that the entire stretch of land you have been traversing is the top of a giant iceberg. You find a broken underwater robot while walking across the frozen beach.\n▷ You take 2 Energy Cells from it.",
+    "A column of rebel soldiers advances slowly through the snowy landscape. The strong winds and dense fog make their travel hard and strenuous. Two of their own have already perished under the extreme conditions, yet their mission must still be completed: reaching MO-S-926, an abandoned Old World military base at the top of the mountain peak. A recent intelligence report suggests that there is powerful technology still intact inside the facility. One of the rebel scouts spots you and urges the whole group to advance toward your position.\n-2 ▶ You are identified by a Guerrilla Commander as an enemy of WARG. He attacks you, along with 2 Rebel Soldiers.\nJoin the expedition ▶ They offer to climb the mountain trail together. Joining forces will make reaching the base a less daunting task.\nGo alone ▶ You decide to climb the mountain by yourself, turning down their help..\nROLL VIGOR to determine if you are able to make it through and reach the top. If you are traveling with the rebels, add a +4 bonus to the Player Die.\n▷ If you make it to the top, you are able to retrieve a random cybertech implant from the base. If you did it alone, you may also take 75 and a random ranged weapon mod."
+   ]
+  },
+  {
+   "name": "Volcanic Moon",
+   "desc": "Characterized by extreme volcanic activity and high temperatures, housing hundreds of active volcanoes. Rivers of lava flow across their surface, sometimes forming oceans of molten rock, iron and sulfur.",
+   "landing": [
+    "Ash clouds cover the sky, plunging the planet into a darkness broken by glowing lava lakes.",
+    "Geothermal energy plant, explosions have damaged the roof of its power processor.",
+    "Lava waterfall rushing over the gorge of mountain valley.",
+    "River of magma turned solid. You can feel ground move as you walk over it.",
+    "Crater of an inactive volcano. The center the crater is covered in metallic dust.",
+    "Shores of basalt columns surrounding a massive yellow lake of sulfur and molten rock."
+   ],
+   "encounters": [
+    "The throat of a dormant volcano begins to tremble and groan. Columns of fire erupt from its crater for the first time in centuries. Lava and ash roll down its sides and a huge cloud of toxic fumes appears above it. You run back to your spaceship, attempting to escape the incoming disaster.\nROLL GRACE\nSuccess ▶ Your adept piloting skills help you dodge the falling rocks and flames. [+1⚛] Failure ▶ The volcanic ash clouds your vision, covering the view from your cockpit. Your ship is hit by small rocks, catapulted from the volcano. Lose 7 Hull.",
+    "The lunar atmosphere is incompatible with human or alien life. Toxic gases and fumes fill the air, making it impossible to breathe without your spacesuit. Despite the hostile atmospheric conditions, you encounter a circular patch of terraformed terrain covered in grass and vegetation. At the center of the strange circle of land, a vertical cylinder stands meters above ground level, like a totem. The machine is an experimental inhibitor, powered by energy cells, and capable of generating a small breathable atmosphere even in the harshest of conditions.\nTake the batteries ▶ Steal 3 Energy Cells from the inhibitor. The plants die immediately.\nGrab the seeds ▶ Take 2 Terraforming Seeds from the soil. They lack enough sunlight to grow on this moon. You may take them to another planet and plant them.",
+    "Prolonged exposure to high temperatures and toxic atmospheres forces your body into a hallucinatory state. You lose track of time, as your head begins to spin. You wake up hours later, drenched in sweat and fighting a throbbing headache.\n▷ You have -1 to every stat until you reach a Settlement or consume a Health Pack.",
+    "The corpses of an entire army squadron lie buried beneath the ash. You make the effort to pull one of the calcined skeletons out of the ground, in search of any valuable items or information that could reveal their allegiance. Nothing. You keep digging into the scorched soil, eventually discovering the top of a small set of subterranean ruins. A village rests under the surface, perfectly preserved beneath the layers of solidified ash on top of it. After a shot from your weapon, the roof of one of the buried buildings breaks, allowing you to enter from above.\n▷ You find 2 Flash Rounds and a bottle of Zero-G Liquor inside.",
+    "An ISF patrol engages in a skirmish against a group of androids. One of the soldiers screams for help and explains the situation to you. The high temperatures have melted the robots’ circuits, causing malfunctions and errors in their code, turning them hostile in the process. A synth on the verge of death tries to send a secret message to your mental cortex system, arguing that the malfunction is not due to the heat, but because of an alteration to their code, implanted by the soldiers.\nDestroy the robots ▶ Help the soldiers put an end to the fight. Destroy 3 Android Synths. You are rewarded with 95 Serum. [+1 Favor][-1 ]\nFinish off the patrol ▶ Side with the synths and fight 3 ISF Soldiers. The robots offer you a random cybertech, taken from a dying robot. [+1 Favor][-1 ]",
+    "The valve of a circular iron hatch protrudes from the ground. You turn it, activating the mechanism and opening the entrance to an underground shelter. The local terminal is broken, leaving you with no solid information about the building’s owner.\n▷ You find an armor stand inside, displaying a Hades IV armor set."
+   ]
+  },
+  {
+   "name": "Hollow Moon",
+   "desc": "Man-made orbiting megastructures with a metallic outer layer and a hollow core. Their interiors often housed population centers or entertainment facilities, with breathable air and large gardens.",
+   "landing": [
+    "Small transparent moon. Its rotation engine malfunctioning, nullifying all gravity inside.",
+    "Mecha building factory, an unfinished armored suit prototype sits in the mechanics bay.",
+    "Suburban neighborhood with thousands of identical housing compartments.",
+    "Cybertech company mega-store. Its interior been looted and ransacked.",
+    "Theme park featuring an interminable roller coaster that circles around the whole moon.",
+    "Hyperspeed racing track for hover vehicles. Three of them have crashed into the last"
+   ],
+   "encounters": [
+    "Rotating holo screens display a vast and beautiful virtual world. They are ads for an Old World videogame: Fairy Song Online. The game servers stopped working after the apocalypse. However, an urban legend claims that its digital world is still alive.\n▷ You find a random HACK in a PC terminal.",
+    "A gigantic industrial complex occupies over half of the moon’s surface. Kilometers and kilometers of factory buildings and power generators, all connected by an underground system of conveyor belts. Robotic arms arrange various complex components, manufactured by different branches of the factory line, and assemble them into a final robot model. You have discovered the location of one of the largest android factories still in operation. The lights flicker before a total blackout hits the facility. The building is under attack by the Medusa Sector. A group of androids prepares to repel the incoming attack.\nDefend the factory ▶ Side with the synths and fight a Cyber-Terrorist and a Nethacker. Gain a random cybertech. [+1 Favor][-1 ]\nKill the androids ▶ Help the attackers and fight the Synth Apostle while the others take care of the soldiers. They reward you with a random MASTER HACK. [+1 Favor][-1 ]",
+    "Your starship’s navigational controls stop working. The Y and X coordinates flip, causing the starship to spin and float upside down. The moon’s cyberdefense systems might have been triggered by your arrival, infecting your starship’s piloting module with a sophisticated virus.\nROLL MIND\nSuccess ▶ You access the control terminal and locate the malware, successfully deleting it.\nFailure ▶ You are not able to deactivate the virus in time. Your ship drifts around the lunar orbit for several hours before you can fix the issue. Lose 6 Fuel and 5 Energy.",
+    "The inner layer of the moon is severely overcrowded with low quality housing, built from metal scraps and cement. At the height of population growth during the empire age, hundreds of Hollow Moons like this one were constructed and filled with slums to house the lower classes.\n▷ You scavenge 2 random status cures from one of the empty homes.",
+    "The moon is still inhabited, its interior populated by a small tribe of Edge-Worlders, descendants from the few survivors that remained in the moon after the apocalypse. They offer you to trade wares with them.\n▷ You may buy any melee weapons or melee weapon mods from them.",
+    "A wide hologram depicts an euphoric woman sipping from a bottle of Stardust™ Soda. Her bright smile can be seen on advertisement posters all over the galaxy. You have found the manufacturing plant of the universe’s most popular soft drink. The facility is now completely nonoperational after the tragic disappearance of the company’s CEO. The halt in production drastically increased the price of the remaining supply, making the drink a valuable possession.\nYou enter the factory building. The entire perimeter is drenched in the iconic smell of the carbonated cola. Hundreds of empty bottles sit atop shelves. You hear gunshots coming from the lower floors. A group of nomad scavengers fight against space pirates for the last box of soda bottles.\nSide with the nomads ▶ Help the scavengers by fighting 2 Space Pirates.\nSide with the pirates ▶ Defeat a Looter and 2 Edge-Worlders.\n▷ If you defeat the enemies, you get your share of the treasure: d6 bottles of original flavor Stardust™ Soda. They can be sold for 100 each, instead of their regular cost, or consumed."
+   ]
+  }
+ ]
+}
