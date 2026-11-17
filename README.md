@@ -59,13 +59,3 @@ Rebuild the executable (needs `pyinstaller`):
 python -m PyInstaller --onefile --windowed --name "Astroprisma Hex Explorer" \
     --icon app.ico --add-data "astro_data.json;." astroprisma_explorer.py
 ```
-
-## Notes & limitations
-
-- Encounter/planet/satellite **titles** in the book are drawn as outlined
-  graphics (not real text), so they aren't reproduced; the full body text of
-  each entry is. The dice number that selected the entry is always shown.
-- A few currency icons (Serum) are not in the PDF's text layer; bare trade
-  amounts are labelled "Serum", which is correct in those contexts.
-- Settlement output lists which faction controls it plus its standard
-  facilities; it is a hub rather than a random encounter.
